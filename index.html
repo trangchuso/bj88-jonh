@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJ88: Đá Gà Trực Tiếp</title>
+    
+    <!-- Nhúng thư viện icon FontAwesome (Miễn phí) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Liên kết tệp CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Lớp phủ tối màu khi mở menu trên điện thoại -->
+    <div class="overlay" id="overlay"></div>
+
+    <nav class="sidebar" id="sidebar">
+    <!-- Khu vực Logo (Sử dụng hình ảnh bạn cung cấp) -->
+    <div class="sidebar-brand">
+        <img src="images/l1.png" alt="Logo" class="brand-logo">
+        <div class="brand-text">
+            <h4>BOURNEMOUTH</h4>
+            <p>Đối Tác Măt Trước Áo Đấu</p>
+        </div>
+    </div>
+
+    <!-- Nút hành động nổi bật -->
+<div class="sidebar-action">
+    <button class="btn-highlight">
+        <!-- Thay 'ten_file_icon_cua_ban.png' bằng đường dẫn chính xác tới file icon bạn đã tải -->
+        <img src="images/icon-sv388.png" alt="Icon" class="btn-icon">
+        <span class="btn-text">CPC</span> 
+    </button>
+</div>
+
+    <!-- Danh sách Menu với mũi tên Dropdown -->
+<ul class="sidebar-menu">
+    <li>
+        <a href="#" class="active"><i class="fa-solid fa-house"></i> Trang chủ</a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/phobien.png" alt="icon" class="menu-icon">
+            PHỔ BIẾN
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/icon-sport.png" alt="icon" class="menu-icon">
+            THỂ THAO
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/icon-sv388.png" alt="icon" class="menu-icon">
+            ĐÁ GÀ
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/icon-casino.png" alt="icon" class="menu-icon">
+            SÒNG BÀI
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/icon-slot.png" alt="icon" class="menu-icon">
+            SLOTS
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/icon-fish.png" alt="icon" class="menu-icon">
+            BẮN CÁ
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/icon-lottery.png" alt="icon" class="menu-icon">
+            XỔ SỐ
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/icon-table.png" alt="icon" class="menu-icon">
+            GAME BÀI
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/icon-crash.png" alt="icon" class="menu-icon">
+            CRASH
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <img src="images/icon-arcade.png" alt="icon" class="menu-icon">
+            ARCADE
+        </a>
+    </li>
+    <!-- Bắt đầu phần icon thư viện miễn phí -->
+    <li>
+        <a href="#">
+            <i class="fa-solid fa-gift"></i> Khuyến mãi
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa-solid fa-award"></i> Thành viên VIP
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa-solid fa-ranking-star"></i> Bảng xếp hạng
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa-solid fa-square-caret-down"></i> Tải xuống
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa-solid fa-handshake"></i> Đối tác / Đại lý
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa-solid fa-user-tie"></i> Đại sứ Thương hiệu
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa-solid fa-user-group"></i> Chương trình giới thiệu
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fa-solid fa-circle-info"></i> Thông tin
+        </a>
+    </li>
+</ul>
+</nav>
+
+    <!-- Khu vực nội dung chính -->
+    <main class="main-content">
+        <!-- Phần đầu trang (Header) -->
+<header class="header">
+    <div class="header-left">
+        <!-- Nút Hamburger (Chỉ hiện trên điện thoại) -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- Nút Back (Chỉ hiện trên máy tính) -->
+        <button class="back-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+    </div>
+
+    <!-- Khu vực chứa Logo ở giữa -->
+    <div class="header-center">
+        <img src="images/logo.png" alt="Logo" class="main-logo">
+        <img src="images/fc.png" alt="Partner" class="partner-logo">
+    </div>
+
+    <!-- Khu vực nút bấm và đổi ngôn ngữ bên phải -->
+    <div class="header-right">
+    <button class="btn-login" id="btn-open-login">Đăng nhập</button>
+    <button class="btn-register" id="btn-open-register">Đăng ký</button>
+    <img src="images/vn.png" alt="VN" class="lang-icon">
+</div>
+</header>
+
+        <!-- Biểu ngữ trượt (Slider Banner) -->
+<section class="banner-slider">
+    <div class="slider-container" id="slider-container">
+    <!-- Slide 1 -->
+    <picture class="slide">
+        <!-- Ảnh dành cho Điện thoại (màn hình nhỏ hơn 768px) -->
+        <source media="(max-width: 768px)" srcset="images/bnmb1.jpg">
+        <!-- Ảnh dành cho Máy tính (Mặc định) -->
+        <img src="images/banner1.jpg" alt="Banner 1">
+    </picture>
+
+    <!-- Slide 2 -->
+    <picture class="slide">
+        <source media="(max-width: 768px)" srcset="images/bnmb2.jpg">
+        <img src="images/banner2.jpg" alt="Banner 2">
+    </picture>
+
+    <!-- Slide 3 -->
+    <picture class="slide">
+        <source media="(max-width: 768px)" srcset="images/bnmb3.jpg">
+        <img src="images/banner3.jpg" alt="Banner 3">
+    </picture>
+
+    <!-- Slide 4 -->
+    <picture class="slide">
+        <source media="(max-width: 768px)" srcset="images/bnmb4.jpg">
+        <img src="images/banner4.jpg" alt="Banner 4">
+    </picture>
+
+    <!-- Slide 5 -->
+    <picture class="slide">
+        <source media="(max-width: 768px)" srcset="images/bnmb5.jpg">
+        <img src="images/banner5.jpg" alt="Banner 5">
+    </picture>
+
+    <!-- Slide 6 -->
+    <picture class="slide">
+        <source media="(max-width: 768px)" srcset="images/bnmb6.jpg">
+        <img src="images/banner6.jpg" alt="Banner 6">
+    </picture>
+</div>
+    
+    <!-- Các nút điều hướng (Tùy chọn, giống dấu < > trong hình 11) -->
+    <button class="slider-btn prev-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="slider-btn next-btn" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+</section>
+
+        <!-- Khu vực thanh cuộn ngang chứa menu -->
+<div class="category-nav-container">
+    <div class="category-nav-bar">
+        <!-- Nút đặc biệt ở đầu (Được cắt chéo cạnh phải) -->
+        <a href="#" class="cat-btn-special">
+            <!-- Thay bằng icon của bạn -->
+            <img src="images/icon-sv388.png" alt="icon" class="cat-icon">
+            SV388
+        </a>
+        
+        <!-- Nút đang được chọn (Nền vàng) -->
+        <a href="#" class="cat-btn active">
+            <img src="images/phobien.png" alt="icon" class="cat-icon">
+            PHỔ BIẾN
+        </a>
+
+        <!-- Các nút danh mục khác -->
+        <a href="#" class="cat-btn">
+            <img src="images/icon-sport.png" alt="icon" class="cat-icon">
+            THỂ THAO
+        </a>
+        <a href="#" class="cat-btn">
+            <img src="images/icon-sv388.png" alt="icon" class="cat-icon">
+            ĐÁ GÀ
+        </a>
+        <a href="#" class="cat-btn">
+            <img src="images/icon-casino.png" alt="icon" class="cat-icon">
+            SÒNG BÀI
+        </a>
+        <a href="#" class="cat-btn">
+            <img src="images/icon-slot.png" alt="icon" class="cat-icon">
+            SLOTS
+        </a>
+        <a href="#" class="cat-btn">
+            <img src="images/icon-fish.png" alt="icon" class="cat-icon">
+            BẮN CÁ
+        </a>
+        <a href="#" class="cat-btn">
+            <img src="images/icon-lottery.png" alt="icon" class="cat-icon">
+            XỔ SỐ
+        </a>
+        <a href="#" class="cat-btn">
+            <img src="images/icon-table.png" alt="icon" class="cat-icon">
+            GAME BÀI
+        </a>
+        <a href="#" class="cat-btn">
+            <img src="images/icon-crash.png" alt="icon" class="cat-icon">
+            CRASH
+        </a>
+        <a href="#" class="cat-btn">
+            <img src="images/icon-arcade.png" alt="icon" class="cat-icon">
+            ARCADE
+        </a>
+    </div>
+</div>
+
+        <!-- Lưới hiển thị khóa học (Grid) -->
+<section class="content-section">
+    <!-- Tiêu đề phần (Có icon màu vàng) -->
+    <h3 class="section-title">
+        <img src="images/phobien.png" alt="icon" class="title-icon"> PHỔ BIẾN
+    </h3>
+    
+    <!-- Vùng chứa lưới -->
+    <div class="grid-container">
+        <!-- Thẻ 1 -->
+        <div class="card">
+            <img src="images/1.jpg" alt="Học tập 1">
+        </div>
+        <!-- Thẻ 2 -->
+        <div class="card">
+            <img src="images/2.jpg" alt="Học tập 2">
+        </div>
+        <!-- Thẻ 3 -->
+        <div class="card">
+            <img src="images/3.jpg" alt="Học tập 3">
+        </div>
+        <!-- Thẻ 4 -->
+        <div class="card">
+            <img src="images/4.jpg" alt="Học tập 4">
+        </div>
+        <!-- Thẻ 5 -->
+        <div class="card">
+            <img src="images/5.jpg" alt="Học tập 5">
+        </div>
+        <!-- Thẻ 6 -->
+        <div class="card">
+            <img src="images/6.jpg" alt="Học tập 6">
+        </div>
+        <!-- Thẻ 7 -->
+        <div class="card">
+            <img src="images/7.png" alt="Học tập 1">
+        </div>
+        <!-- Thẻ 8 -->
+        <div class="card">
+            <img src="images/8.png" alt="Học tập 2">
+        </div>
+        <!-- Thẻ 9 -->
+        <div class="card">
+            <img src="images/9.png" alt="Học tập 3">
+        </div>
+        <!-- Thẻ 10 -->
+        <div class="card">
+            <img src="images/10.png" alt="Học tập 4">
+        </div>
+        <!-- Thẻ 11 -->
+        <div class="card">
+            <img src="images/11.jpg" alt="Học tập 5">
+        </div>
+        <!-- Thẻ 12 -->
+        <div class="card">
+            <img src="images/12.jpg" alt="Học tập 6">
+        </div>
+        <!-- Thẻ 13 -->
+        <div class="card">
+            <img src="images/13.jpg" alt="Học tập 1">
+        </div>
+        <!-- Thẻ 14 -->
+        <div class="card">
+            <img src="images/14.jpg" alt="Học tập 2">
+        </div>
+        <!-- Thẻ 15 -->
+        <div class="card">
+            <img src="images/15.jpg" alt="Học tập 3">
+        </div>
+        <!-- Thẻ 16 -->
+        <div class="card">
+            <img src="images/16.jpg" alt="Học tập 4">
+        </div>
+        <!-- Thẻ 17 -->
+        <div class="card">
+            <img src="images/17.jpg" alt="Học tập 5">
+        </div>
+        <!-- Thẻ 18 -->
+        <div class="card">
+            <img src="images/18.jpg" alt="Học tập 6">
+        </div>
+    </div>
+
+</section>
+   <!-- === MODAL ĐĂNG NHẬP === -->
+<div class="modal-overlay" id="login-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Đăng nhập</h3>
+            <button class="close-btn" id="close-login"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <!-- Thay bằng ảnh banner của bạn -->
+        <img src="images/bnmb2.jpg" alt="Banner" class="modal-banner">
+        
+        <form class="modal-form">
+            <div class="form-group">
+                <label>Tên tài khoản</label>
+                <input type="text" placeholder="Tên đăng nhập">
+            </div>
+            <div class="form-group">
+                <label>Mật khẩu</label>
+                <div class="input-wrapper">
+                    <input type="password" placeholder="Mật khẩu">
+                    <i class="fa-solid fa-eye-slash toggle-pw"></i>
+                </div>
+            </div>
+            <!-- YÊU CẦU MỚI: Thêm trường Số điện thoại vào form đăng nhập -->
+            <div class="form-group">
+                <label>Số điện thoại</label>
+                <input type="tel" placeholder="Số điện thoại">
+            </div>
+            
+            <div class="form-options">
+                <a href="#" class="forgot-pw">Quên mật khẩu</a>
+            </div>
+            
+            <button type="button" class="btn-submit btn-yellow">Đăng nhập</button>
+            
+            <div class="modal-footer">
+                Bạn Chưa Đăng ký? Click <a href="#" id="switch-to-register">Đăng ký</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- === MODAL ĐĂNG KÝ === -->
+<div class="modal-overlay" id="register-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Đăng ký</h3>
+            <button class="close-btn" id="close-register"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <!-- Thay bằng ảnh banner của bạn -->
+        <img src="images/bnmb2.jpg" alt="Banner" class="modal-banner">
+        
+        <form class="modal-form">
+            <div class="form-group">
+                <label>Tên đăng nhập*</label>
+                <input type="text" placeholder="gồm 6 ~ 20 ký tự, bao gồm chữ & số">
+            </div>
+            <div class="form-group">
+                <label>Mật khẩu*</label>
+                <div class="input-wrapper">
+                    <input type="password" placeholder="6~ 20 ký tự, cho phép dùng số">
+                    <i class="fa-solid fa-eye-slash toggle-pw"></i>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Họ và Tên* <i class="fa-regular fa-circle-question"></i></label>
+                <input type="text" placeholder="Họ và Tên">
+            </div>
+
+            <div class="form-group">
+                <label>Số điện thoại*</label>
+                <div class="phone-input-group">
+                    <div class="country-code">
+                        <img src="images/vn.png" alt="VN"> +84
+                    </div>
+                    <input type="tel" placeholder="Số điện thoại">
+                </div>
+            </div>
+            <!-- Đã bỏ trường Mã giới thiệu theo yêu cầu -->
+
+            <div class="form-checkbox">
+                <input type="checkbox" id="agree-terms">
+                <label for="agree-terms">Tôi đồng ý và hiểu các <a href="#">Điều khoản & Điều kiện</a></label>
+            </div>
+            
+            <button type="button" class="btn-submit btn-dark">Gửi</button>
+        </form>
+    </div>
+</div>
+    <!-- Liên kết tệp JavaScript (đặt ở cuối thẻ body) -->
+    <script src="script.js"></script>
+</body>
+</html>
